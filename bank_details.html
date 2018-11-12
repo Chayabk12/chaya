@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<script>
+
+function Bank(acc_no) 
+{
+ //var acc_bal=acc_bal;
+ //var acc_no=acc_no;
+ this.holder_name=acc_no;
+ return{
+  
+  getname:function(name){
+     return this.holder_name=name;
+  }
+ }
+ }
+ var bank_obj=new Bank("chaya");
+ //bank_obj.set_name("Chaya");
+ var val=bank_obj.getname("chaya");
+ document.write(val);
+ /*
+ 
+ function Keg(_contains, _amount) {
+// private members
+var contains = _contains;
+this.amount = _amount;
+// public methods
+return{
+fill : function(beverage, amountAdded) {
+this.contains = beverage;
+this.amount = amountAdded;
+}
+}
+}
+// create an instance of a Keg
+var keg = new Keg("Soda", 100.0);
+// modify its properties
+keg.fill("Pop", 50.0); // this is the only public member
+//varamt= keg.amount; // undefined! hidden from us
+document.write(keg.amount);*/
+</script>
+</body>
+</html>
+
+
+
+
+
